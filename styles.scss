@@ -1,0 +1,171 @@
+$principal: black;
+$texto: rgb(219, 174, 76);
+$texto2: rgb(255, 240, 206);
+$fondo1:  url(img/fondo.jpg);
+$fondo2: rgba(0, 0, 0, 0.8);
+$fondo3: rgba(219, 174, 76, 0.8);
+
+$fuenteprincipal: 'Josefin Slab', serif;
+
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: $fuenteprincipal; 
+    background-image:$fondo1; 
+    color: aqua; 
+    
+}
+
+#tarot{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    margin: auto;
+
+    
+    .imagen{
+        width: 100%;
+        max-width: 400px;    
+        margin: auto; 
+        display: flex;     
+        align-items: center;
+
+        img{
+            width: 70%;  
+            margin: auto;   
+            margin-top: 50px;
+ 
+        }
+    }
+
+    @media all and (min-width: 920px){
+    .imagen{
+        
+        img{
+            width: 100%;
+        }
+    }
+    }
+
+    .contenedor_texto{
+        background-color: $fondo2 ; 
+        width: 100%;
+        max-width: 600px;  
+        align-items: center;
+        text-align: center;
+        margin: auto;
+
+        h1{
+            font-size: 50px;
+            color: $texto;        
+            width: 100%; 
+            margin-bottom: 20px;             
+        }
+        h2{
+            font-size: 40px;
+            color: $texto;        
+            width: 100%; 
+            margin-bottom: 20px;   
+        }
+
+        .cartas{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            margin:auto;
+            margin-top: 50px;
+            margin-bottom: 30px;
+
+            .carta{
+                width: 25%;
+                margin: auto;
+                cursor: pointer;
+                background-color: black;              
+                
+                img{
+                    width: 100%;
+                    border: .5px solid $texto;
+                }
+
+            }
+        }
+
+
+    }
+}
+
+.modal{       
+
+    .carta_elegida{
+        background-color: $fondo3; 
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100vh;     
+        margin: auto;
+        align-items: center;     
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 5;
+
+
+        .contenedor_texto{             
+            width: 100%;
+            max-width: 400px;    
+            margin: auto;
+
+            h1{
+                font-size: 30px;
+                color: $principal;        
+                width: 100%; 
+                margin-bottom: 20px;             
+            }
+
+            p{
+                color: $principal;
+                font-weight: 600;
+                margin: 0px;   
+                font-size: 20px;    
+                width: 100%;
+                max-width: 400px;
+            }   
+    
+        }
+        .imagen{
+            width: 100%;
+            max-width: 200px;    
+            margin: auto;
+    
+            img{
+                width: 100%;      
+                margin: auto;   
+  
+            }
+        }
+        
+        .cerrar{
+            color: black;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 6;
+            font-weight: 600;
+            cursor: pointer;
+            font-size: 20px;             
+        }     
+        
+        .cerrar:hover{
+            font-weight: 900;
+            color: $texto2;
+        }
+    }
+    
+}
+
+
+
+
+
+

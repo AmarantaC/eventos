@@ -1,0 +1,126 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Josefin Slab", serif;
+  background-image: url(img/fondo.jpg);
+  color: aqua;
+}
+
+#tarot {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  align-items: center;
+  margin: auto;
+}
+#tarot .imagen {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+#tarot .imagen img {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+@media all and (min-width: 920px) {
+  #tarot .imagen img {
+    width: 100%;
+  }
+}
+#tarot .contenedor_texto {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  max-width: 600px;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+#tarot .contenedor_texto h1 {
+  font-size: 50px;
+  color: rgb(219, 174, 76);
+  width: 100%;
+  margin-bottom: 20px;
+}
+#tarot .contenedor_texto h2 {
+  font-size: 40px;
+  color: rgb(219, 174, 76);
+  width: 100%;
+  margin-bottom: 20px;
+}
+#tarot .contenedor_texto .cartas {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+#tarot .contenedor_texto .cartas .carta {
+  width: 25%;
+  margin: auto;
+  cursor: pointer;
+  background-color: black;
+}
+#tarot .contenedor_texto .cartas .carta img {
+  width: 100%;
+  border: 0.5px solid rgb(219, 174, 76);
+}
+
+.modal .carta_elegida {
+  background-color: rgba(219, 174, 76, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+.modal .carta_elegida .contenedor_texto {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+.modal .carta_elegida .contenedor_texto h1 {
+  font-size: 30px;
+  color: black;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.modal .carta_elegida .contenedor_texto p {
+  color: black;
+  font-weight: 600;
+  margin: 0px;
+  font-size: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+.modal .carta_elegida .imagen {
+  width: 100%;
+  max-width: 200px;
+  margin: auto;
+}
+.modal .carta_elegida .imagen img {
+  width: 100%;
+  margin: auto;
+}
+.modal .carta_elegida .cerrar {
+  color: black;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 6;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 20px;
+}
+.modal .carta_elegida .cerrar:hover {
+  font-weight: 900;
+  color: rgb(255, 240, 206);
+}/*# sourceMappingURL=styles.css.map */
